@@ -19,20 +19,22 @@
     <meta name="description" content="如何使用Vercel部署自己的Blog从CZY那儿得到启发，遂想建立属于自己的Blog，用于记录自己的科研+工作的过程 从零开始用vue+springboot 搭建一个博客的话，固然自由度高，但是搭建过程有些许慢 想想，还是直接使用既有的博客框架吧！  部署平台：Vercel 代码托管：Github 博客框架：Hexo  简单几步搞定自己的BlogStep1： 注册一个Vercel的账户，我使用的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何使用Vercel部署自己的Blog">
-<meta property="og:url" content="http://example.com/2023/04/03/01_how_to_create_blog/index.html">
+<meta property="og:url" content="http://sluckblog.top/2023/04/03/01_how_to_create_blog/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="如何使用Vercel部署自己的Blog从CZY那儿得到启发，遂想建立属于自己的Blog，用于记录自己的科研+工作的过程 从零开始用vue+springboot 搭建一个博客的话，固然自由度高，但是搭建过程有些许慢 想想，还是直接使用既有的博客框架吧！  部署平台：Vercel 代码托管：Github 博客框架：Hexo  简单几步搞定自己的BlogStep1： 注册一个Vercel的账户，我使用的">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403172934273.png">
-<meta property="og:image" content="c:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173052488.png">
-<meta property="og:image" content="c:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173320349.png">
-<meta property="og:image" content="c:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173519815.png">
-<meta property="og:image" content="c:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173631051.png">
-<meta property="article:published_time" content="2023-04-03T08:59:24.092Z">
-<meta property="article:modified_time" content="2023-04-03T09:37:43.014Z">
+<meta property="og:image" content="http://sluckblog.top/.com//image-20230403172934273.png">
+<meta property="og:image" content="http://sluckblog.top/.com//image-20230403174419623.png">
+<meta property="og:image" content="http://sluckblog.top/.com//image-20230403173320349.png">
+<meta property="og:image" content="http://sluckblog.top/.com//image-20230403174607962.png">
+<meta property="og:image" content="http://sluckblog.top/.com//image-20230403175340300.png">
+<meta property="og:image" content="http://sluckblog.top/.com//image-20230403173631051.png">
+<meta property="article:published_time" content="2023-04-03T12:04:14.000Z">
+<meta property="article:modified_time" content="2023-04-03T12:23:24.277Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="vercel;Blog;Deploy">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="c:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403172934273.png">
+<meta name="twitter:image" content="http://sluckblog.top/.com//image-20230403172934273.png">
   
   
   
@@ -74,7 +76,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"sluckblog.top","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -213,8 +215,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-03 16:59" pubdate>
-          2023年4月3日 下午
+        <time datetime="2023-04-03 20:04" pubdate>
+          2023年4月3日 晚上
         </time>
       </span>
     
@@ -225,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          546 字
+          648 字
         
       </span>
     
@@ -236,7 +238,7 @@
         
         
         
-          5 分钟
+          6 分钟
         
       </span>
     
@@ -288,18 +290,22 @@
 <p>博客框架：Hexo</p>
 </blockquote>
 <h2 id="简单几步搞定自己的Blog"><a href="#简单几步搞定自己的Blog" class="headerlink" title="简单几步搞定自己的Blog"></a>简单几步搞定自己的Blog</h2><p>Step1： 注册一个<a target="_blank" rel="noopener" href="https://vercel.com/">Vercel</a>的账户，我使用的是GitHub账户来注册的，方便后续项目托管</p>
-<p><img src="C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403172934273.png" srcset="/img/loading.gif" lazyload alt="image-20230403172934273"></p>
-<p>Step2：注册完成后，点击右上角 <strong>头像</strong>  进入你的  **Dashboard **当中，管理面板中可以看到你目前的项目，点击右上方的 <strong>Add New</strong> 来创建一个新的 Project</p>
-<p><img src="C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173052488.png" srcset="/img/loading.gif" lazyload alt="image-20230403173052488"></p>
+<p><img src="/.com//image-20230403172934273.png" srcset="/img/loading.gif" lazyload alt="image-20230403172934273"></p>
+<p>Step2：注册完成后，点击右上角 <strong>头像</strong>  进入你的  **Dashboard **当中，管理面板中可以看到你目前的项目；点击中下方的 <strong>Create a New Project</strong> 或者点击右上方的 <strong>Add New</strong> 来创建一个新的 Project</p>
+<p><img src="/.com//image-20230403174419623.png" srcset="/img/loading.gif" lazyload alt="image-20230403174419623"></p>
 <p>Step3：进入模板创建页面，两个方式：（1）通过github导入模板项目；（2）在Template市场寻找模板；这里我用的是第一种，那就是现在github上搜索 hexo 模板，在本地搭建部署好后，再import到vercel来</p>
-<p><img src="C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173320349.png" srcset="/img/loading.gif" lazyload alt="image-20230403173320349"></p>
-<p>Step4: 进行部署，等待片刻</p>
-<p><img src="C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173519815.png" srcset="/img/loading.gif" lazyload alt="image-20230403173519815"></p>
+<p><img src="/.com//image-20230403173320349.png" srcset="/img/loading.gif" lazyload alt="image-20230403173320349"></p>
+<p>Step4: 填写项目配置，然后点击 Deploy 进行部署，等待片刻;</p>
+<p>注意两个事情：</p>
+<p>Project Name：不能加入大写，只能够小写</p>
+<p>Root Directory：需要修改成对应的blog目录</p>
+<p><img src="/.com//image-20230403174607962.png" srcset="/img/loading.gif" lazyload alt="image-20230403174607962"></p>
+<p><img src="/.com//image-20230403175340300.png" srcset="/img/loading.gif" lazyload alt="image-20230403175340300"></p>
 <p>Step5：可以在github上找找自己喜欢的主题，然后导入到项目中去，我目前找的是 <strong>Fluid</strong> 这个主题，还挺好看</p>
 <p><strong>推荐几款美观的主题：</strong></p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/491537945">8 款颜值爆赞的 Hexo 主题推荐！快来搭建个人博客玩玩 | Github掘金计划 - 知乎 (zhihu.com)</a></p>
 <p>最终的成品如下：</p>
-<p><img src="C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173631051.png" srcset="/img/loading.gif" lazyload alt="image-20230403173631051"></p>
+<p><img src="/.com//image-20230403173631051.png" srcset="/img/loading.gif" lazyload alt="image-20230403173631051"></p>
 
                 
               </div>
@@ -308,6 +314,13 @@
             <div>
               <div class="post-metas my-3">
   
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/vercel-Blog-Deploy/">#vercel;Blog;Deploy</a>
+      
+    </div>
   
 </div>
 
@@ -318,7 +331,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>如何使用Vercel部署自己的Blog</div>
-      <div>http://example.com/2023/04/03/01_how_to_create_blog/</div>
+      <div>http://sluckblog.top/2023/04/03/01_how_to_create_blog/</div>
     </div>
     <div class="license-meta">
       
