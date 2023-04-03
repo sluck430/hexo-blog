@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>02_hexo_image-failed</title>
+    <link href="/2023/04/03/02-hexo-image-failed/"/>
+    <url>/2023/04/03/02-hexo-image-failed/</url>
+    
+    <content type="html"><![CDATA[<h1 id="一、先说如何让hexo图片成功显示出来"><a href="#一、先说如何让hexo图片成功显示出来" class="headerlink" title="一、先说如何让hexo图片成功显示出来"></a>一、先说如何让hexo图片成功显示出来</h1><p><strong>Step1: 修改config设置</strong> </p><p>将_config.yml 设置文件中的 <strong>post_asset_folder</strong> 修改为 true</p><p><img src="https://cdn.nlark.com/yuque/0/2023/png/1591433/1680526793691-5206a523-2920-4016-8363-0018aa7615e4.png" alt="img"></p><p>这一步的作用——在于之后每次使用<code>hexo new &lt;title&gt;</code>初始化新的博客文档时，就会在 source&#x2F;_post&#x2F; 下生成一个与<title>.md文件同名的资源文件夹。</title></p><p>例如，输入<code>hexo new 01_how_to_create_blog</code>，就会出现以下结果，一个01_how_to_create_blog.md文档以及一个01_how_to_create_blog文件夹</p><p><img src="https://cdn.nlark.com/yuque/0/2023/png/1591433/1680526991411-8e65d172-1d08-4e6b-9c8b-f4f331d06dba.png" alt="img"></p><p><strong>Step2: 安装插件</strong></p><p>通过以下npm命令安装 <strong>hexo-asset-image</strong> 插件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">npm install https://github.com/CodeFalling/hexo-asset-image<br></code></pre></td></tr></table></figure><p><strong>Step3：图片转移以及路径跟换</strong></p><p>将图片文件复制到同名文件夹中，并设置图片为相对路径；如下图所示，“01_how_to_create_blog&#x2F;“文件夹下，图片已经从typora的图片缓存文件夹复制过来了，然后修改01_how_to_create_blog.md文件里的所有image路径，只留下图片名称。</p><p><img src="https://cdn.nlark.com/yuque/0/2023/png/1591433/1680527056737-b00a5964-9123-4492-a39d-4b87af276c7c.png" alt="img"></p><p><img src="https://cdn.nlark.com/yuque/0/2023/png/1591433/1680527084070-cddefa4a-53ac-4d0f-8e40-c4c830a0e237.png" alt="img"></p><p><strong>Step4：运行查看</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">hexo generate<br>hexo server <br></code></pre></td></tr></table></figure><h1 id="二、再说为什么会出现以下-x2F-com-x2F-x2F-情况"><a href="#二、再说为什么会出现以下-x2F-com-x2F-x2F-情况" class="headerlink" title="二、再说为什么会出现以下 &#x2F;.com&#x2F;&#x2F; 情况"></a>二、再说为什么会出现以下 &#x2F;.com&#x2F;&#x2F; 情况</h1><p>目前看来，该错误其实是 <strong>hexo-asset-image</strong> 插件的bug</p><p>解决方法如下：</p><p><strong>Step1: 先卸载 hexo-asset-image</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">npm uninstall hexo-asset-image<br></code></pre></td></tr></table></figure><p><strong>Step2：重新下载正确的</strong> <strong>hexo-asset-image 插件</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">npm install https://github.com/CodeFalling/hexo-asset-image<br></code></pre></td></tr></table></figure><p><strong>Step3：运行三步走</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">hexo clean<br>hexo generate<br>hexo server <br></code></pre></td></tr></table></figure><p>完成！</p><p><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/1591433/1680527794329-7ac5c0a2-eae0-44f7-a3ee-ac2e0199c544.jpeg" alt="img"></p><p><strong>参考博客：</strong></p><p><a href="https://blog.csdn.net/ayuayue/article/details/109198493">https://blog.csdn.net/ayuayue/article/details/109198493</a></p><p><a href="https://segmentfault.com/q/1010000020310187">https://segmentfault.com/q/1010000020310187</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>hexo;image;</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>如何使用Vercel部署自己的Blog</title>
     <link href="/2023/04/03/01_how_to_create_blog/"/>
     <url>/2023/04/03/01_how_to_create_blog/</url>
