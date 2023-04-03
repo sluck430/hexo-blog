@@ -1,10 +1,8 @@
 ---
-title: 如何使用Vercel部署自己的Blog 
+title: 如何使用Vercel部署自己的Blog
+date: 2023-04-03 20:04:14
+tags: vercel;Blog;Deploy 
 ---
-
-
-
-
 
 # 如何使用Vercel部署自己的Blog
 
@@ -28,17 +26,17 @@ title: 如何使用Vercel部署自己的Blog
 
 Step1： 注册一个[Vercel](https://vercel.com)的账户，我使用的是GitHub账户来注册的，方便后续项目托管
 
-![image-20230403172934273](C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403172934273.png)
+![image-20230403172934273](01_how_to_create_blog\image-20230403172934273.png)
 
 Step2：注册完成后，点击右上角 **头像**  进入你的  **Dashboard **当中，管理面板中可以看到你目前的项目；点击中下方的 **Create a New Project** 或者点击右上方的 **Add New** 来创建一个新的 Project
 
-![image-20230403174419623](C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403174419623.png)
+![image-20230403174419623](01_how_to_create_blog\image-20230403174419623.png)
 
 
 
 Step3：进入模板创建页面，两个方式：（1）通过github导入模板项目；（2）在Template市场寻找模板；这里我用的是第一种，那就是现在github上搜索 hexo 模板，在本地搭建部署好后，再import到vercel来
 
-![image-20230403173320349](C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173320349.png)
+![image-20230403173320349](01_how_to_create_blog\image-20230403173320349.png)
 
 Step4: 填写项目配置，然后点击 Deploy 进行部署，等待片刻;
 
@@ -48,9 +46,9 @@ Project Name：不能加入大写，只能够小写
 
 Root Directory：需要修改成对应的blog目录
 
-![image-20230403174607962](C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403174607962.png)
+![image-20230403174607962](01_how_to_create_blog\image-20230403174607962.png)
 
-![image-20230403175340300](C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403175340300.png)
+![image-20230403175340300](01_how_to_create_blog\image-20230403175340300.png)
 
 Step5：可以在github上找找自己喜欢的主题，然后导入到项目中去，我目前找的是 **Fluid** 这个主题，还挺好看
 
@@ -62,5 +60,5 @@ Step5：可以在github上找找自己喜欢的主题，然后导入到项目中
 
 最终的成品如下：
 
-![image-20230403173631051](C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173631051.png)
+![image-20230403173631051](01_how_to_create_blog\image-20230403173631051.png)
 
