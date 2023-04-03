@@ -40,11 +40,17 @@ Step3：进入模板创建页面，两个方式：（1）通过github导入模�
 
 ![image-20230403173320349](C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403173320349.png)
 
-Step4: 进行部署，等待片刻
+Step4: 填写项目配置，然后点击 Deploy 进行部署，等待片刻;
+
+注意两个事情：
+
+Project Name：不能加入大写，只能够小写
+
+Root Directory：需要修改成对应的blog目录
 
 ![image-20230403174607962](C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403174607962.png)
 
-
+![image-20230403175340300](C:\Users\YUNFENG\AppData\Roaming\Typora\typora-user-images\image-20230403175340300.png)
 
 Step5：可以在github上找找自己喜欢的主题，然后导入到项目中去，我目前找的是 **Fluid** 这个主题，还挺好看
 
