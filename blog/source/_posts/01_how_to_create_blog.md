@@ -40,7 +40,7 @@ tags: vercel;Blog;Deploy
 
 ![image-20230403172934273](image-20230403172934273.png)
 
-**Step2：**注册完成后，点击右上角 **头像**  进入你的  **Dashboard **当中，管理面板中可以看到你目前的项目；点击中下方的 **Create a New Project** 或者点击右上方的 **Add New** 来创建一个新的 Project
+**Step2：**注册完成后，点击右上角 **头像**  进入你的  **Dashboard** 当中，管理面板中可以看到你目前的项目；点击中下方的 **Create a New Project** 或者点击右上方的 **Add New** 来创建一个新的 Project
 
 ![image-20230403174419623](image-20230403174419623.png)
 
@@ -88,7 +88,7 @@ Vercel分配的域名有时候从大陆方面访问不上，但是自己购买�
 
 **Step1 : 购买域名**
 
-首先得有一个属于自己的域名，可以到 [万网（阿里云）]([阿里云企航_万网域名_工商财税_知识产权_资质备案_智能设计_网站建设-阿里云 (aliyun.com)](https://wanwang.aliyun.com/?utm_content=se_1008775275)) 或者 [NameSilo]([Cheap Domain Names & Web Hosting Starting at $0.99! | NameSilo](https://www.namesilo.com/)) 上去购买
+首先得有一个属于自己的域名，可以到 [万网（阿里云）](https://wanwang.aliyun.com/?utm_content=se_1008775275)或者 [NameSilo](https://www.namesilo.com/) 上去购买
 
 我这里是从 NameSilo 上买的 .top域名 sluckblog.top
 
